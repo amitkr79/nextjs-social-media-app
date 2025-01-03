@@ -92,6 +92,7 @@ const Sidebar = () => {
               {/* name */}
               <Typography className="typoSubtitle2">Sign out</Typography>
             </Link>
+           
           </Box>
         </div>
       </SidebarContainer>
