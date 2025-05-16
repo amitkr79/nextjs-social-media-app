@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Next.js Social Media App
 
-## Getting Started
+A modern, full-stack social media platform built with the latest web technologies including **Next.js 14**, **React 18**, **Clerk authentication**, **Supabase**, and **Prisma**. This project features a sleek UI with **Ant Design**, rich media support via **Cloudinary**, real-time interactions, and auto-animated components.
 
-First, run the development server:
+> 🔓 **Free to use** – Feel free to clone, modify, and deploy for personal or educational use.
+
+---
+
+## 🚀 Features
+
+- 🔐 **Clerk Auth** – secure, production-ready authentication
+- 🧬 **Supabase** – real-time database and user storage
+- ⚙️ **Prisma ORM** – type-safe and scalable database access
+- 🎨 **Ant Design + CSSinJS** – polished UI with powerful components
+- 🖼️ **Cloudinary Integration** – image and media uploads
+- 🌈 **Auto Animate** – smooth transitions for dynamic UI
+- 📦 **React Query** – server-state management with caching and devtools
+- 🔔 **React Hot Toast** – clean and customizable notifications
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14, React 18
+- **Styling**: Ant Design, @ant-design/cssinjs
+- **Auth**: Clerk
+- **Database**: Supabase (Postgres)
+- **ORM**: Prisma
+- **Media**: Cloudinary
+- **State Management**: React Query
+- **UX Enhancements**: Auto Animate, React Hot Toast
+
+---
+
+## 📂 Project Structure
+
+.
+├── pages/ # Next.js pages
+├── components/ # Reusable UI components
+├── lib/ # Helpers and API clients
+├── styles/ # Theme and global styles
+├── prisma/ # Prisma schema
+└── public/ # Static assets
+
+
+---
+
+## 🔧 Getting Started
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/your-username/nextjs-social-media-app.git
+cd nextjs-social-media-app
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Setup environment variables
+Create a .env file in the root:
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_anon_key
+DATABASE_URL=your_database_url
+CLOUDINARY_URL=your_cloudinary_url
+4. Run Prisma migrations
+bash
+Copy
+Edit
+npx prisma generate
+npx prisma migrate dev
+5. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The app will be live at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📦 Deployment
+You can deploy this project using platforms like:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Netlify
 
-## Learn More
+Render
 
-To learn more about Next.js, take a look at the following resources:
+Just set the appropriate environment variables in the hosting dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🤝 Contributing
+Contributions are welcome! Please fork the repo and submit a pull request for any bug fixes or improvements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+📄 License
+This project is licensed under the MIT License — free to use, modify, and distribute.
 
-## Deploy on Vercel
+📸 Screenshots (Optional)
+Add screenshots or a Loom video demo here to showcase your UI.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🙌 Credits
+Special thanks to the creators of:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next.js
+
+Clerk
+
+Supabase
+
+Prisma
+
+Ant Design
+
+Cloudinary
+
